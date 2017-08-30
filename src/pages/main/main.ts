@@ -2,7 +2,6 @@
 
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { TabsPage } from '../tabs/tabs';
 import { Http, Headers } from '@angular/http';
 import 'rxjs/Rx';
 import { ToastController } from 'ionic-angular';
@@ -15,10 +14,10 @@ import { ToastController } from 'ionic-angular';
   Ionic pages and navigation.
 */
 @Component({
-  selector: 'page-login',
-  templateUrl: 'login.html'
+  selector: 'page-main',
+  templateUrl: 'main.html'
 })
-export class LoginPage {
+export class MainPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private http:Http, public toastCtrl: ToastController) {}
 
@@ -32,7 +31,7 @@ export class LoginPage {
   }
 
   toMainPage() {
-      this.navCtrl.push(TabsPage);
+      // this.navCtrl.push(TabsPage);
   }
 
   login() {
