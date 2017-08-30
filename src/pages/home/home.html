@@ -1,0 +1,71 @@
+<!--<ion-header>-->
+  <!--<ion-navbar>-->
+    <!--<ion-title>Home</ion-title>-->
+  <!--</ion-navbar>-->
+<!--</ion-header>-->
+
+
+<!--<ion-content padding>-->
+  <!--<button ion-button block color="dark" (click)="doAlert()">Show Basic Alert</button>-->
+<!--</ion-content>-->
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      动态
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<!--<ion-content class="map">-->
+  <!--<div #container id="container" class="mapContainer"></div>-->
+<!--</ion-content>-->
+
+<ion-content>
+    <ion-toolbar no-border-top>
+       <ion-segment [(ngModel)]="pet">
+         <ion-segment-button value="puppies">
+           公开
+         </ion-segment-button>
+         <ion-segment-button value="kittens">
+           私信
+         </ion-segment-button>
+       </ion-segment>
+     </ion-toolbar>
+    <!-- <ion-card *ngFor="let item of message">
+        <ion-card-content>
+            {{item}}
+        </ion-card-content>
+    </ion-card> -->
+
+    <ion-list>
+        <ion-item (click)="doAlert()">
+            <ion-thumbnail item-left>
+                <img src="assets/img/article/m1.jpg" />
+            </ion-thumbnail>
+            <h2>Test Info</h2>
+            <p>
+                刚刚
+            </p>
+        </ion-item>
+        <ion-item>
+            <ion-thumbnail item-left>
+                <img src="assets/img/article/m2.jpg" />
+            </ion-thumbnail>
+            <h2>Test Info</h2>
+            <p>
+                1小时前
+            </p>
+        </ion-item>
+        <ion-item>
+            <ion-thumbnail item-left>
+                <img src="assets/img/article/m3.jpg" />
+            </ion-thumbnail>
+            <h2>Test Info</h2>
+            <p>
+                5月1日
+            </p>
+        </ion-item>
+    </ion-list>
+</ion-content>
