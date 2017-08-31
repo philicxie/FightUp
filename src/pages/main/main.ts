@@ -24,37 +24,14 @@ export class MainPage {
   userInfo = {
       Account: '',
       Password: ''
-  }
+  };
+    current_count = 0;
 
   ionViewDidLoad() {
 
   }
-
-  toMainPage() {
-      // this.navCtrl.push(TabsPage);
-  }
-
-  login() {
-      this.toMainPage();
-      //this.showToast();
-      //let url = 'http://192.168.1.59:3000';
-      let url = 'http://localhost:3000';
-      let uri = '/authority/getAllUsers';
-      let body = {};
-      console.log(this.userInfo.Account);
-      this.http.post(url+uri, body)
-        .map(res => res.json())
-        .subscribe(data => {
-            console.log(data);
-        });
-  }
-
-  showToast() {
-      let toast = this.toastCtrl.create({
-          message: 'Ops',
-          duration: 1500,
-          position: "top"
-      });
-      toast.present();
-  }
+    addCount(num) {
+        this.current_count += num*1;
+        console.log(this.current_count);
+    }
 }

@@ -8,17 +8,18 @@
 <!--</ion-header>-->
 
 <ion-content padding>
-  <ion-list>
-      <ion-item>
-          <ion-icon name="lock"></ion-icon>
-          <ion-input type="text" [(ngModel)]="userInfo.Account" placeholder="账号" clearInput></ion-input>
-      </ion-item>
-  </ion-list>
+  <!--<ion-list>-->
+      <!--<ion-item>-->
+          <!--<ion-icon name="lock"></ion-icon>-->
+          <!--<ion-input type="text" [(ngModel)]="userInfo.Account" placeholder="账号" clearInput></ion-input>-->
+      <!--</ion-item>-->
+  <!--</ion-list>-->
+    <ion-item id="count">0</ion-item>
   <div padding>
-      <button ion-button color="primary" block (click)="login()">+1</button>
-      <button ion-button color="primary" block (click)="login()">+5</button>
-      <button ion-button color="primary" block (click)="login()">+10</button>
-      <button ion-button color="primary" block (click)="login()">+50</button>
-      <button ion-button color="primary" block (click)="login()">+100</button>
+      <button ion-button color="primary" block (click)="addCount(1)">+1</button>
+      <button ion-button color="primary" block (click)="addCount(5)">+5</button>
+      <button ion-button color="primary" block (click)="addCount(10)">+10</button>
+      <button ion-button color="primary" block (click)="addCount(50)">+50</button>
+      <button ion-button color="primary" block (click)="addCount(100)">+100</button>
   </div>
 </ion-content>
