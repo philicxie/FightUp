@@ -1,11 +1,11 @@
 
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      水务巡检终端
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<!--<ion-header>-->
+  <!--<ion-navbar>-->
+    <!--<ion-title>-->
+      <!--水务巡检终端-->
+    <!--</ion-title>-->
+  <!--</ion-navbar>-->
+<!--</ion-header>-->
 
 <ion-content padding>
   <ion-list>
@@ -13,12 +13,12 @@
           <ion-icon name="lock"></ion-icon>
           <ion-input type="text" [(ngModel)]="userInfo.Account" placeholder="账号" clearInput></ion-input>
       </ion-item>
-      <ion-item>
-          <ion-icon name="key"></ion-icon>
-          <ion-input type="password" [(ngModel)]="userInfo.Password" placeholder="密码" clearInput></ion-input>
-      </ion-item>
   </ion-list>
   <div padding>
-      <button ion-button color="primary" block (click)="login()">登陆</button>
+      <button ion-button color="primary" block (click)="login()">+1</button>
+      <button ion-button color="primary" block (click)="login()">+5</button>
+      <button ion-button color="primary" block (click)="login()">+10</button>
+      <button ion-button color="primary" block (click)="login()">+50</button>
+      <button ion-button color="primary" block (click)="login()">+100</button>
   </div>
 </ion-content>
