@@ -25,13 +25,13 @@ export class MainPage {
       Account: '',
       Password: ''
   };
-    current_count = 0;
+  current_count = 0;
 
   ionViewDidLoad() {
 
   }
-    addCount(num) {
-        this.current_count += num*1;
-        console.log(this.current_count);
-    }
+  addCount(num) {
+      this.current_count += num*1;
+      console.log(this.current_count);
+  }
 }
