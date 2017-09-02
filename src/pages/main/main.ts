@@ -19,12 +19,8 @@ import { ToastController } from 'ionic-angular';
 })
 export class MainPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private http:Http, public toastCtrl: ToastController) {}
+  constructor(public navCtrl: NavController, public navParams: NavParams, private http:Http) {}
 
-  userInfo = {
-      Account: '',
-      Password: ''
-  };
   current_count = 0;
 
   ionViewDidLoad() {

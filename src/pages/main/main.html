@@ -14,7 +14,7 @@
           <!--<ion-input type="text" [(ngModel)]="userInfo.Account" placeholder="账号" clearInput></ion-input>-->
       <!--</ion-item>-->
   <!--</ion-list>-->
-    <ion-item id="count">0</ion-item>
+    <ion-item id="count">{{current_count}}</ion-item>
   <div padding>
       <button ion-button color="primary" block (click)="addCount(1)">+1</button>
       <button ion-button color="primary" block (click)="addCount(5)">+5</button>
