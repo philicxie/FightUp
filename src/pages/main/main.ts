@@ -6,6 +6,8 @@ import { Http, Headers } from '@angular/http';
 import 'rxjs/Rx';
 import { ToastController } from 'ionic-angular';
 
+import { Storage } from '@ionic/storage'
+
 
 /*
   Generated class for the Login page.
