@@ -5,7 +5,6 @@ import { MyApp } from './app.component';
 import { MainPage } from '../pages/main/main';
 import { Storage } from '@ionic/storage';
 
-
 @NgModule({
     declarations: [
         MyApp,
