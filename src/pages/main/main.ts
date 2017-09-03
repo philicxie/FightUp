@@ -18,27 +18,29 @@ import { Storage } from '@ionic/storage'
 export class MainPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private http:Http, private storage: Storage) {
-      storage.get('count').then((val) => {
-          if(!val) {
-              storage.set('count', 0);
-          } else {
-              console.log(val);
-          }
-      });
+
   }
 
   current_count = 0;
 
 
   ionViewDidLoad() {
-      console.log('???');
-
+      this.storage.get('count').then((val) => {
+          if(!val) {
+              this.storage.set('count', 0);
+              this.current_count = 0;
+          } else {
+              this.current_count = val*1;
+          }
+      })
   }
+
+  ionViewWillLeave() {
+      this.storage.set('count', this.current_count);
+      console.log(this.current_count);
+  }
+
   addCount(num) {
       this.current_count += num*1;
-      console.log(this.current_count);
-      this.storage.get('count').then((val) => {
-          console.log(val);
-      })
   }
 }
